@@ -108,7 +108,7 @@ void printDeck(const Deck& deck) {
 }
 
 void shuffleDeck(Deck& deck) {
-    static std::mt19937 mt{ static_cast<std::mt19937::result_type>(std::time(nullptr))};
+    static std::mt19937 mt{ static_cast<std::mt19937::result_type>(std::time(nullptr)) };
     std::shuffle(deck.begin(), deck.end(), mt);
 }
 
